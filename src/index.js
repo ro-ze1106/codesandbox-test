@@ -153,7 +153,7 @@
 /**
  * mapやfilterを使った配列処理
  */
-const nameArr = ["yuki", "eri", "tomo"];
+// const nameArr = ["yuki", "eri", "tomo"];
 // for (let index = 0; index < nameArr.length; index++) {
 //   console.log(`${index + 1}番目の${nameArr[index]}です。`);
 // }
@@ -171,11 +171,29 @@ const nameArr = ["yuki", "eri", "tomo"];
 // });
 // console.log(newNumArr);
 
-const nameNewArr = nameArr.map((name) => {
-  if (name === "yuki") {
-    return name;
-  } else {
-    return `${name}さん`;
-  }
-});
-console.log(nameNewArr);
+// const nameNewArr = nameArr.map((name) => {
+//   if (name === "yuki") {
+//     return name;
+//   } else {
+//     return `${name}さん`;
+//   }
+// });
+// console.log(nameNewArr);
+
+/**
+ * 三項演算子
+ */
+//ある条件　？　条件がtureの時　: 条件がfalseの時
+// const val1 = 1 < 0 ? "tureです" : "falseです";
+// console.log(val1)
+
+// const num = 1300;
+// console.log(num.toLocaleString());
+
+// const formattedNum = typeof num === 'number' ? num.toLocaleString() : "数字を入力してください"
+// console.log(formattedNum);
+
+const checkSum = (num1, num2) => {
+  return num1 + num2 > 100 ? "100を超えています" : "許容範囲内です";
+};
+console.log(checkSum(50, 80));
